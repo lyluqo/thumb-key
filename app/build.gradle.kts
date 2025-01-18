@@ -13,8 +13,8 @@ android {
         applicationId = "com.dessalines.thumbkey"
         minSdk = 21
         targetSdk = 35
-        versionCode = 131
-        versionName = "4.0.13"
+        versionCode = 133
+        versionName = "4.0.15"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -97,7 +97,7 @@ dependencies {
     implementation("androidx.compose.runtime:runtime-livedata:1.7.6")
 
     // Activities
-    implementation("androidx.activity:activity-compose:1.9.3")
+    implementation("androidx.activity:activity-compose:1.10.0")
     implementation("androidx.activity:activity-ktx:1.9.3")
 
     // LiveData

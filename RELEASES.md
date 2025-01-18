@@ -1,3 +1,19 @@
+## What's Changed in 4.0.15
+
+- Layout portuguese dvorak wide by @lyluqo in [#1234](https://github.com/dessalines/thumb-key/pull/1234)
+- Add Tab, Esc in dvorak-wide by @lyluqo in [#1232](https://github.com/dessalines/thumb-key/pull/1232)
+- Add Breton French compose keyboard by @zeecho in [#1231](https://github.com/dessalines/thumb-key/pull/1231)
+
+**Full Changelog**: https://github.com/dessalines/thumb-key/compare/4.0.14...4.0.15
+
+## What's Changed in 4.0.14
+
+- Update NumericWide ° \* # by @lyluqo in [#1227](https://github.com/dessalines/thumb-key/pull/1227)
+- Fix swipe types of NumericWide by @lyluqo in [#1226](https://github.com/dessalines/thumb-key/pull/1226)
+- Fix dvorak compose ´ by @lyluqo in [#1225](https://github.com/dessalines/thumb-key/pull/1225)
+
+**Full Changelog**: https://github.com/dessalines/thumb-key/compare/4.0.13...4.0.14
+
 ## What's Changed in 4.0.13
 
 - Adding Arabic levant thumbkey keyboard. by @dessalines in [#1224](https://github.com/dessalines/thumb-key/pull/1224)

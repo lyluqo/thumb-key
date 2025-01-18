@@ -11,7 +11,7 @@ import com.dessalines.thumbkey.utils.FontSizeVariant.*
 import com.dessalines.thumbkey.utils.KeyAction.*
 import com.dessalines.thumbkey.utils.SwipeNWay.*
 
-val KB_EN_DVORAK_WIDE_PUNCT_KEY =
+val KB_PT_DVORAK_WIDE_PUNCT_KEY =
     KeyItemC(
         center = KeyC("'", size = LARGE),
         swipeType = FOUR_WAY_DIAGONAL,
@@ -21,13 +21,16 @@ val KB_EN_DVORAK_WIDE_PUNCT_KEY =
         bottomLeft = KeyC(",", color = MUTED),
     )
 
-val KB_EN_DVORAK_WIDE_MAIN =
+val KB_PT_DVORAK_WIDE_MAIN =
     KeyboardC(
         listOf(
             listOf(
                 KeyItemC(
                     center = KeyC("a", size = LARGE),
-                    swipeType = FOUR_WAY_DIAGONAL,
+                    bottomLeft = KeyC("à", color = MUTED),
+                    bottom = KeyC("ã", color = MUTED),
+                    bottomRight = KeyC("â", color = MUTED),
+                    right = KeyC("á", color = MUTED),
                 ),
                 KeyItemC(
                     center = KeyC("y", size = LARGE),
@@ -49,20 +52,23 @@ val KB_EN_DVORAK_WIDE_MAIN =
             listOf(
                 KeyItemC(
                     center = KeyC("o", size = LARGE),
-                    swipeType = TWO_WAY_HORIZONTAL,
+                    topRight = KeyC("ó", color = MUTED),
+                    bottomRight = KeyC("ô", color = MUTED),
                     right = KeyC("q"),
                 ),
                 KeyItemC(
                     center = KeyC("u", size = LARGE),
                     swipeType = TWO_WAY_HORIZONTAL,
                     left = KeyC("k"),
+                    right = KeyC("ú", color = MUTED),
                 ),
-                KB_EN_DVORAK_WIDE_PUNCT_KEY,
+                KB_PT_DVORAK_WIDE_PUNCT_KEY,
                 KeyItemC(
                     center = KeyC("d", size = LARGE),
-                    swipeType = TWO_WAY_HORIZONTAL,
+                    swipeType = FOUR_WAY_CROSS,
                     left = KeyC("v"),
                     right = KeyC("c"),
+                    bottom = KeyC("ç"),
                 ),
                 KeyItemC(
                     center = KeyC("n", size = LARGE),
@@ -73,14 +79,16 @@ val KB_EN_DVORAK_WIDE_MAIN =
             listOf(
                 KeyItemC(
                     center = KeyC("e", size = LARGE),
-                    swipeType = FOUR_WAY_DIAGONAL,
                     left = KeyC("\u001b", displayText = "⎋", color = MUTED),
                     topRight = KeyC("j"),
+                    top = KeyC("õ", color = MUTED),
+                    right = KeyC("é", color = MUTED),
+                    bottomRight = KeyC("ê", color = MUTED),
                 ),
                 KeyItemC(
                     center = KeyC("i", size = LARGE),
-                    swipeType = FOUR_WAY_DIAGONAL,
                     topLeft = KeyC("x"),
+                    right = KeyC("í", color = MUTED),
                 ),
                 NUMERIC_KEY_ITEM,
                 KeyItemC(
@@ -91,7 +99,6 @@ val KB_EN_DVORAK_WIDE_MAIN =
                 ),
                 KeyItemC(
                     center = KeyC("t", size = LARGE),
-                    swipeType = FOUR_WAY_DIAGONAL,
                     topLeft = KeyC("w"),
                     right =
                         KeyC(
@@ -124,13 +131,16 @@ val KB_EN_DVORAK_WIDE_MAIN =
         ),
     )
 
-val KB_EN_DVORAK_WIDE_SHIFTED =
+val KB_PT_DVORAK_WIDE_SHIFTED =
     KeyboardC(
         listOf(
             listOf(
                 KeyItemC(
                     center = KeyC("A", size = LARGE),
-                    swipeType = FOUR_WAY_DIAGONAL,
+                    bottomLeft = KeyC("À", color = MUTED),
+                    bottom = KeyC("Ã", color = MUTED),
+                    bottomRight = KeyC("Â", color = MUTED),
+                    right = KeyC("Á", color = MUTED),
                 ),
                 KeyItemC(
                     center = KeyC("Y", size = LARGE),
@@ -152,20 +162,23 @@ val KB_EN_DVORAK_WIDE_SHIFTED =
             listOf(
                 KeyItemC(
                     center = KeyC("O", size = LARGE),
-                    swipeType = TWO_WAY_HORIZONTAL,
                     right = KeyC("Q"),
+                    topRight = KeyC("Ó", color = MUTED),
+                    bottomRight = KeyC("Ô", color = MUTED),
                 ),
                 KeyItemC(
                     center = KeyC("U", size = LARGE),
                     swipeType = TWO_WAY_HORIZONTAL,
                     left = KeyC("K"),
+                    right = KeyC("Ú", color = MUTED),
                 ),
-                KB_EN_DVORAK_WIDE_PUNCT_KEY,
+                KB_PT_DVORAK_WIDE_PUNCT_KEY,
                 KeyItemC(
                     center = KeyC("D", size = LARGE),
-                    swipeType = TWO_WAY_HORIZONTAL,
+                    swipeType = FOUR_WAY_CROSS,
                     left = KeyC("V"),
                     right = KeyC("C"),
+                    bottom = KeyC("Ç", color = MUTED),
                 ),
                 KeyItemC(
                     center = KeyC("N", size = LARGE),
@@ -176,14 +189,16 @@ val KB_EN_DVORAK_WIDE_SHIFTED =
             listOf(
                 KeyItemC(
                     center = KeyC("E", size = LARGE),
-                    swipeType = FOUR_WAY_DIAGONAL,
                     left = KeyC("\u001b", displayText = "⎋", color = MUTED),
                     topRight = KeyC("J"),
+                    top = KeyC("Õ", color = MUTED),
+                    right = KeyC("É", color = MUTED),
+                    bottomRight = KeyC("Ê", color = MUTED),
                 ),
                 KeyItemC(
                     center = KeyC("I", size = LARGE),
-                    swipeType = FOUR_WAY_DIAGONAL,
                     topLeft = KeyC("X"),
+                    right = KeyC("Í", color = MUTED),
                 ),
                 NUMERIC_KEY_ITEM,
                 KeyItemC(
@@ -230,13 +245,13 @@ val KB_EN_DVORAK_WIDE_SHIFTED =
         ),
     )
 
-val KB_EN_DVORAK_WIDE: KeyboardDefinition =
+val KB_PT_DVORAK_WIDE: KeyboardDefinition =
     KeyboardDefinition(
-        title = "english dvorak wide",
+        title = "português dvorak wide",
         modes =
             KeyboardDefinitionModes(
-                main = KB_EN_DVORAK_WIDE_MAIN,
-                shifted = KB_EN_DVORAK_WIDE_SHIFTED,
+                main = KB_PT_DVORAK_WIDE_MAIN,
+                shifted = KB_PT_DVORAK_WIDE_SHIFTED,
                 numeric = WIDE_NUMERIC_KEYBOARD,
             ),
     )
